@@ -20,7 +20,6 @@ func main() {
 	}
 	fmt.Println("All 3 tries were wasted! Exam is failed!")
 }
-
 package main
 
 import "fmt"
@@ -30,7 +29,8 @@ var yourPassword string
 
 func main() {
 	for i := 0; ; i+=1 {
-		fmt.Scan(yourPassword)
+		fmt.Println("Type your password!")
+		fmt.Scan(&yourPassword)
 		if yourPassword == password {
 			fmt.Println("Your password is correct! Welcome to the System")
 			break
