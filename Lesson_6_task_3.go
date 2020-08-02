@@ -12,8 +12,12 @@ func main() {
 		fmt.Scan(&randomNumber)
 		fmt.Println("Type the exponential: ")
 		fmt.Scan(&pow)
-		exponential = math.Pow(randomNumber, pow)
-		fmt.Println(exponential)
-		return
+		if pow > 0 {
+			exponential = math.Pow(randomNumber, pow)
+			fmt.Println(exponential)
+			return
+		} else {
+			fmt.Println("Your exponento is below or equal zero")
+		}
 	}
 }
