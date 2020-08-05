@@ -39,3 +39,31 @@ func main() {
 		}
 	}
 }
+
+package main
+
+import "fmt"
+
+var currentValue, oneKmValue, kilometers int
+
+func main () {
+	currentValue := 0
+	oneKmValue := 1000000
+	kilometers := 0
+
+	for {
+		currentValue = currentValue + 1
+
+		if currentValue == oneKmValue {
+			kilometers = kilometers + 1
+			currentValue = 0
+
+			fmt.Println(kilometers, "km")
+		}
+
+		if kilometers == 10 {
+			fmt.Println("Stage completed")
+			break
+		}
+	}
+}
