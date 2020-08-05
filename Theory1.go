@@ -67,3 +67,26 @@ func main () {
 		}
 	}
 }
+
+package main
+
+import "fmt"
+
+func main() {
+	checkNumber := 0
+	prizes := 10
+
+	for checkNumber < 100 {
+		checkNumber += 1
+		fmt.Println("Check Number :", checkNumber)
+
+		if checkNumber % 10 != 0 {
+			continue
+		}
+		prizes -= 1
+		fmt.Println("Prize should be given!")
+		fmt.Println("Coupon for Discount: ")
+		fmt.Println("Prizes left", prizes)
+	}
+}
+
