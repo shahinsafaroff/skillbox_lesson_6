@@ -24,20 +24,18 @@ package main
 
 import "fmt"
 
-const password = "admin_1234"
-var yourPassword string
-
 func main() {
-	for i := 0; ; i+=1 {
-		fmt.Println("Type your password!")
-		fmt.Scan(&yourPassword)
-		if yourPassword == password {
-			fmt.Println("Your password is correct! Welcome to the System")
+	i := 0
+	j := 0
+
+	for i < 10 {
+		i = i + 1
+		j = j + 2
+		fmt.Println("Hello World", i)
+
+
+		if j == 8 {
 			break
-		}else {
-			fmt.Println("Type your Password again!")
 		}
-
 	}
-
 }
